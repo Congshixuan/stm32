@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"liushuideng_103c\startup_stm32f103xb.o"
+"liushuideng_103c\main.o"
+"liushuideng_103c\gpio.o"
+"liushuideng_103c\stm32f1xx_it.o"
+"liushuideng_103c\stm32f1xx_hal_msp.o"
+"liushuideng_103c\stm32f1xx_hal_gpio_ex.o"
+"liushuideng_103c\stm32f1xx_hal.o"
+"liushuideng_103c\stm32f1xx_hal_rcc.o"
+"liushuideng_103c\stm32f1xx_hal_rcc_ex.o"
+"liushuideng_103c\stm32f1xx_hal_gpio.o"
+"liushuideng_103c\stm32f1xx_hal_dma.o"
+"liushuideng_103c\stm32f1xx_hal_cortex.o"
+"liushuideng_103c\stm32f1xx_hal_pwr.o"
+"liushuideng_103c\stm32f1xx_hal_flash.o"
+"liushuideng_103c\stm32f1xx_hal_flash_ex.o"
+"liushuideng_103c\stm32f1xx_hal_exti.o"
+"liushuideng_103c\system_stm32f1xx.o"
+"liushuideng_103c\led_flow.o"
+--strict --scatter "liushuideng_103c\liushuideng_103c.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "liushuideng_103c.map" -o liushuideng_103c\liushuideng_103c.axf

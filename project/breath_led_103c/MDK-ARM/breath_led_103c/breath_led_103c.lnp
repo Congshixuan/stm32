@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"breath_led_103c\startup_stm32f103xb.o"
+"breath_led_103c\main.o"
+"breath_led_103c\gpio.o"
+"breath_led_103c\tim.o"
+"breath_led_103c\stm32f1xx_it.o"
+"breath_led_103c\stm32f1xx_hal_msp.o"
+"breath_led_103c\stm32f1xx_hal_gpio_ex.o"
+"breath_led_103c\stm32f1xx_hal_tim.o"
+"breath_led_103c\stm32f1xx_hal_tim_ex.o"
+"breath_led_103c\stm32f1xx_hal.o"
+"breath_led_103c\stm32f1xx_hal_rcc.o"
+"breath_led_103c\stm32f1xx_hal_rcc_ex.o"
+"breath_led_103c\stm32f1xx_hal_gpio.o"
+"breath_led_103c\stm32f1xx_hal_dma.o"
+"breath_led_103c\stm32f1xx_hal_cortex.o"
+"breath_led_103c\stm32f1xx_hal_pwr.o"
+"breath_led_103c\stm32f1xx_hal_flash.o"
+"breath_led_103c\stm32f1xx_hal_flash_ex.o"
+"breath_led_103c\stm32f1xx_hal_exti.o"
+"breath_led_103c\system_stm32f1xx.o"
+"breath_led_103c\breath_led.o"
+--strict --scatter "breath_led_103c\breath_led_103c.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "breath_led_103c.map" -o breath_led_103c\breath_led_103c.axf
