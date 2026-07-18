@@ -26,6 +26,6 @@ static void set_leds_by_mask(uint8_t mask);     // 批量控制多个LED亮灭
 
 ![image-20260718205817723](C:\Users\34756\AppData\Roaming\Typora\typora-user-images\image-20260718205817723.png)
 
-1.在中断函数中检测更改标志位函数的模式，并将信息传递到while函数中
+1.按下任意按键，引脚下降沿触发外部中断，进入外部中断回调函数；在中断函数中检测更改标志位函数的模式，并将信息传递到while循环中
 
 ![image-20260718205937677](C:\Users\34756\AppData\Roaming\Typora\typora-user-images\image-20260718205937677.png)
